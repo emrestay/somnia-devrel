@@ -17,7 +17,7 @@ Reactivity is currently only available on **Somnia Testnet**.
 |---|---|
 | Chain ID | `50312` |
 | RPC (HTTP) | `https://api.infra.testnet.somnia.network` |
-| RPC (WebSocket) | `wss://api.infra.testnet.somnia.network` |
+| RPC (WebSocket) | `wss://api.infra.testnet.somnia.network/ws` |
 | Block Explorer | `https://shannon-explorer.somnia.network` |
 | Native Token | STT (Somnia Testnet Token), 18 decimals |
 | Faucet | `https://testnet.somnia.network` |
@@ -33,7 +33,7 @@ const somniaTestnet = defineChain({
   rpcUrls: {
     default: {
       http: ['https://api.infra.testnet.somnia.network'],
-      webSocket: ['wss://api.infra.testnet.somnia.network']
+      webSocket: ['wss://api.infra.testnet.somnia.network/ws']
     }
   },
   blockExplorers: {
